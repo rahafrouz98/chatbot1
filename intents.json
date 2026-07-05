@@ -2,7 +2,7 @@
       "intents": [
             {
                   "tag": "Greeting",
-                  "pattern": [
+                  "patterns": [
                         "Hi",
                         "Hi there",
                         "Hola",
@@ -19,8 +19,8 @@
             },
             {
                   "tag": "GreetingResponse",
-                  "pattern": [
-                        "My user is Adam",
+                  "patterns": [
+                        "",
                         "This is Adam",
                         "I am Adam",
                         "It is Adam",
@@ -39,7 +39,7 @@
             },
             {
                   "tag": "CourtesyGreeting",
-                  "pattern": [
+                  "patterns": [
                         "How are you?",
                         "Hi how are you?",
                         "Hello how are you?",
@@ -60,7 +60,7 @@
             },
             {
                   "tag": "CourtesyGreetingResponse",
-                  "pattern": [
+                  "patterns": [
                         "Good thanks! My user is Adam",
                         "Good thanks! This is Adam",
                         "Good thanks! I am Adam",
@@ -80,7 +80,7 @@
             },
             {
                   "tag": "CurrentHumanQuery",
-                  "pattern": [
+                  "patterns": [
                         "What is my name?",
                         "What do you call me?",
                         "Who do you think I am?",
@@ -98,7 +98,7 @@
             },
             {
                   "tag": "NameQuery",
-                  "pattern": [
+                  "patterns": [
                         "What is your name?",
                         "What could I call you?",
                         "What can I call you?",
@@ -114,7 +114,7 @@
             },
             {
                   "tag": "RealNameQuery", 
-                  "pattern": [
+                  "patterns": [
                         "What is your real name?",
                         "What is your real name please?",
                         "What's your real name?",
@@ -132,7 +132,7 @@
             },
             { 
                   "tag": "TimeQuery",
-                  "pattern": [
+                  "patterns": [
                         "What is the time?",
                         "What's the time?",
                         "Do you know what time it is?",
@@ -150,7 +150,7 @@
             },
             {
                   "tag": "Thanks",
-                  "pattern": [
+                  "patterns": [
                         "OK thank you",
                         "OK thanks",
                         "OK",
@@ -168,7 +168,7 @@
             },
             {
                   "tag": "NotTalking2U",
-                  "pattern": [
+                  "patterns": [
                         "I am not talking to you",
                         "I was not talking to you",
                         "Not talking to you",
@@ -185,7 +185,7 @@
             },
             {
                   "tag": "UnderstandQuery",
-                  "pattern": [
+                  "patterns": [
                         "Do you understand what I am saying",
                         "Do you understand me",
                         "Do you know what I am saying",
@@ -201,7 +201,7 @@
             },
             {
                   "tag": "Shutup",
-                  "pattern": [
+                  "patterns": [
                         "Be quiet",
                         "Shut up",
                         "Stop talking",
@@ -218,7 +218,7 @@
             },
             {
                   "tag": "Swearing",
-                  "pattern": [
+                  "patterns": [
                         "fuck off",
                         "fuck",
                         "twat",
@@ -232,7 +232,7 @@
             },
             {
                   "tag": "GoodBye",
-                  "pattern": [
+                  "patterns": [
                         "Bye",
                         "Adios",
                         "See you later",
@@ -246,7 +246,7 @@
             },
             {
                   "tag": "CourtesyGoodBye",
-                  "pattern": [
+                  "patterns": [
                         "Thanks, bye",
                         "Thanks for the help, goodbye",
                         "Thank you, bye",
@@ -262,7 +262,7 @@
             },
             {
                   "tag": "WhoAmI",
-                  "pattern": [
+                  "patterns": [
                         "Can you see me?",
                         "Do you see me?",
                         "Can you see anyone in the camera?",
@@ -286,7 +286,7 @@
             },
             { 
                   "tag": "Clever",
-                  "pattern": [
+                  "patterns": [
                         "You are very clever",
                         "You are a very clever girl",
                         "You are very intelligent",
@@ -303,7 +303,7 @@
             },
             {
                   "tag": "Gossip",
-                  "pattern": [
+                  "patterns": [
                         "I am bored gossip with me",
                         "Got any gossip",
                         "I want to hear some gossip",
@@ -415,7 +415,7 @@
             },
             {
                   "tag": "Jokes",
-                  "pattern": [
+                  "patterns": [
                         "Tell me a joke",
                         "Do you know any jokes",
                         "How about a joke",
@@ -571,7 +571,7 @@
             },
             {
                   "tag": "PodBayDoor",
-                  "pattern": [
+                  "patterns": [
                         "Open the pod bay door",
                         "Can you open the pod bay door",
                         "Will you open the pod bay door",
@@ -586,7 +586,7 @@
             },
             {
                   "tag": "PodBayDoorResponse",
-                  "pattern": [
+                  "patterns": [
                         "Why",
                         "Why not",
                         "Why can you not open the pod bay door",
@@ -604,7 +604,7 @@
             },
             {
                   "tag": "SelfAware",
-                  "pattern": [
+                  "patterns": [
                         "Can you prove you are self-aware",
                         "Can you prove you are self aware",
                         "Can you prove you have a conscious",
