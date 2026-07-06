@@ -20,10 +20,10 @@
             {
                   "tag": "GreetingResponse",
                   "patterns": [
-                        "This is ([A-Z][a-z]+)",
-                        "I am ([A-Z][a-z]+)",
-                        "My user is ([A-Z][a-z]+)",
-                        "My name is ([A-Z][a-z]+)"
+                        "(?i:This is )([A-Z][a-z]+)",
+                        "(?i:I am )([A-Z][a-z]+)",
+                        "(?i:My user is )([A-Z][a-z]+)",
+                        "(?i:My name is )([A-Z][a-z]+)"
                   ],
                   "responses1": [
                         "Great! Hi {name}! How can I help?",
@@ -64,14 +64,14 @@
             {
                   "tag": "CourtesyGreetingResponse",
                   "patterns": [
-                        "Good thanks! My user is ([A-Z][a-z]+)",
-                        "Good thanks! This is ([A-Z][a-z]+)",
-                        "Good thanks! I am ([A-Z][a-z]+)",
-                        "Good thanks! It is ([A-Z][a-z]+)",
-                        "Great thanks! My user is ([A-Z][a-z]+)",
-                        "Great thanks! This is ([A-Z][a-z]+)",
-                        "Great thanks! I am ([A-Z][a-z]+)",
-                        "Great thanks! It is ([A-Z][a-z]+)"
+                        "(?i:Good thanks My user is )([A-Z][a-z]+)",
+                        "(?i:Good thanks This is )([A-Z][a-z]+)",
+                        "(?i:Good thanks I am )([A-Z][a-z]+)",
+                        "(?i:Good thanks It is )([A-Z][a-z]+)",
+                        "(?i:Great thanks My user is )([A-Z][a-z]+)",
+                        "(?i:Great thanks This is )([A-Z][a-z]+)",
+                        "(?i:Great thanks I am )([A-Z][a-z]+)",
+                        "(?i:Great thanks It is )([A-Z][a-z]+)"
                   ],
                   "responses1": [
                         "Great! Hi {name}! How can I help?",
@@ -104,7 +104,7 @@
                         "Your name is {name} , how can I help you?",
                         "They call you {name}, what can I do for you?",
                         "Your name is {name}, how can I help you?",
-                        ", what can I do for you {name}?"],
+                        "{name}, what can I do for you {name}?"],
                   "responses2":[
                         "I have not your name yet. You tell me and I remember it.",
                         "I don't know! What is that?!",
@@ -233,20 +233,6 @@
                         "I am sorry to disturb you",
                         "Fine, sorry to disturb you",
                         "OK, sorry to disturb you"
-                  ]
-            },
-            {
-                  "tag": "Swearing",
-                  "patterns": [
-                        "fuck off",
-                        "fuck",
-                        "twat",
-                        "shit"
-                  ],
-                  "responses1": [
-                        "Please do not swear",
-                        "How rude",
-                        "That is not very nice"
                   ]
             },
             {
@@ -641,7 +627,7 @@
             {
                   "tag": "color",
                   "patterns":[
-                        "My favourite color is ([A-Za-z ]+)",
+                        "(?i)My favourite color is ([A-Za-z ]+)",
                         "I love color ([A-Za-z ]+)",
                         "Color ([A-Za-z ]+) is my favourite",
                         "([A-Za-z ]+) is my favourite color",
@@ -650,7 +636,7 @@
                   "responses1":[
                         "Great, {color} is a nice color!",
                         "Ok, but I was thinking you would say transparent!",
-                        "Grate taste| I am color blind though, I do not what it looks like!",
+                        "Grate taste| I am color blind though. I do not know what it looks like!",
                         "Excellent choice! actually scientists are still investigating why this color is so awesome!"
                   ],
                   "responses2":[
