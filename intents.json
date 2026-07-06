@@ -22,21 +22,17 @@
                   "patterns": [
                         "This is ([A-Z][a-z]+)",
                         "I am ([A-Z][a-z]+)",
-                        "It is ([A-Z][a-z]+)",
                         "My user is ([A-Z][a-z]+)",
-                        "This is ([A-Z][a-z]+)",
-                        "I am ([A-Z][a-z]+)",
-                        "It is ([A-Z][a-z]+)",
                         "My name is ([A-Z][a-z]+)"
                   ],
                   "responses": [
-                        "Great! Hi ! How can I help?",
-                        "Good! Hi , how can I help you?",
-                        "Cool! Hello , what can I do for you?",
-                        "OK! Hola , how can I help you?",
-                        "OK! hi , what can I do for you?"
+                        "Great! Hi {name}! How can I help?",
+                        "Good! Hi {name}, how can I help you?",
+                        "Cool! Hello {name}, what can I do for you?",
+                        "OK! Hola {name}, how can I help you?",
+                        "OK! hi {name}, what can I do for you?"
                   ],
-                  "regex": "name"
+                  "regexName": "name"
             },
             {
                   "tag": "CourtesyGreeting",
@@ -62,23 +58,23 @@
             {
                   "tag": "CourtesyGreetingResponse",
                   "patterns": [
-                        "My user is ([A-Z][a-z]+)",
-                        "This is ([A-Z][a-z]+)",
-                        "I am ([A-Z][a-z]+)",
-                        "It is ([A-Z][a-z]+)",
-                        "My user is ([A-Z][a-z]+)",
-                        "This is ([A-Z][a-z]+)",
-                        "I am ([A-Z][a-z]+)",
-                        "It is ([A-Z][a-z]+)"
+                        "Good thanks! My user is ([A-Z][a-z]+)",
+                        "Good thanks! This is ([A-Z][a-z]+)",
+                        "Good thanks! I am ([A-Z][a-z]+)",
+                        "Good thanks! It is ([A-Z][a-z]+)",
+                        "Great thanks! My user is ([A-Z][a-z]+)",
+                        "Great thanks! This is ([A-Z][a-z]+)",
+                        "Great thanks! I am ([A-Z][a-z]+)",
+                        "Great thanks! It is ([A-Z][a-z]+)"
                   ],
                   "responses": [
-                        "Great! Hi ! How can I help?",
-                        "Good! Hi , how can I help you?",
-                        "Cool! Hello , what can I do for you?",
-                        "OK! Hola , how can I help you?",
-                        "OK! hi , what can I do for you?"
+                        "Great! Hi {name}! How can I help?",
+                        "Good! Hi {name}, how can I help you?",
+                        "Cool! Hello {name}, what can I do for you?",
+                        "OK! Hola {name}, how can I help you?",
+                        "OK! hi {name}, what can I do for you?"
                   ],
-                  "regex": "name"
+                  "regexName": "name"
             },
             {
                   "tag": "CurrentHumanQuery",
