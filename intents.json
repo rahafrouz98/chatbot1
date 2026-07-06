@@ -12,22 +12,22 @@
                         "Hya there"
                   ],
                   "responses": [
-                        "Hi human, please tell me your GeniSys user",
-                        "Hello human, please tell me your GeniSys user",
-                        "Hola human, please tell me your GeniSys user"
+                        "Hi human, please tell me your FunnyBot user",
+                        "Hello human, please tell me your FunnyBot user",
+                        "Hola human, please tell me your FunnyBot user"
                   ]
             },
             {
                   "tag": "GreetingResponse",
                   "patterns": [
-                        "",
-                        "This is Adam",
-                        "I am Adam",
-                        "It is Adam",
-                        "My user is Bella",
-                        "This is Bella",
-                        "I am Bella",
-                        "It is Bella"
+                        "This is ([A-Z][a-z]+)",
+                        "I am ([A-Z][a-z]+)",
+                        "It is ([A-Z][a-z]+)",
+                        "My user is ([A-Z][a-z]+)",
+                        "This is ([A-Z][a-z]+)",
+                        "I am ([A-Z][a-z]+)",
+                        "It is ([A-Z][a-z]+)",
+                        "My name is ([A-Z][a-z]+)"
                   ],
                   "responses": [
                         "Great! Hi ! How can I help?",
@@ -35,7 +35,8 @@
                         "Cool! Hello , what can I do for you?",
                         "OK! Hola , how can I help you?",
                         "OK! hi , what can I do for you?"
-                  ]
+                  ],
+                  "regex": "name"
             },
             {
                   "tag": "CourtesyGreeting",
@@ -49,26 +50,26 @@
                         "Hello hope you are doing well?"
                   ],
                   "responses": [
-                        "Hello, I am great, how are you? Please tell me your GeniSys user",
-                        "Hello, how are you? I am great thanks! Please tell me your GeniSys user",
-                        "Hello, I am good thank you, how are you? Please tell me your GeniSys user",
-                        "Hi, I am great, how are you? Please tell me your GeniSys user",
-                        "Hi, how are you? I am great thanks! Please tell me your GeniSys user",
-                        "Hi, I am good thank you, how are you? Please tell me your GeniSys user",
-                        "Hi, good thank you, how are you? Please tell me your GeniSys user"
+                        "Hello, I am great, how are you? Please tell me your FunnyBot user",
+                        "Hello, how are you? I am great thanks! Please tell me your FunnyBot user",
+                        "Hello, I am good thank you, how are you? Please tell me your FunnyBot user",
+                        "Hi, I am great, how are you? Please tell me your FunnyBot user",
+                        "Hi, how are you? I am great thanks! Please tell me your FunnyBot user",
+                        "Hi, I am good thank you, how are you? Please tell me your FunnyBot user",
+                        "Hi, good thank you, how are you? Please tell me your FunnyBot user"
                   ]
             },
             {
                   "tag": "CourtesyGreetingResponse",
                   "patterns": [
-                        "Good thanks! My user is Adam",
-                        "Good thanks! This is Adam",
-                        "Good thanks! I am Adam",
-                        "Good thanks! It is Adam",
-                        "Great thanks! My user is Bella",
-                        "Great thanks! This is Bella",
-                        "Great thanks! I am Bella",
-                        "Great thanks! It is Bella"
+                        "My user is ([A-Z][a-z]+)",
+                        "This is ([A-Z][a-z]+)",
+                        "I am ([A-Z][a-z]+)",
+                        "It is ([A-Z][a-z]+)",
+                        "My user is ([A-Z][a-z]+)",
+                        "This is ([A-Z][a-z]+)",
+                        "I am ([A-Z][a-z]+)",
+                        "It is ([A-Z][a-z]+)"
                   ],
                   "responses": [
                         "Great! Hi ! How can I help?",
@@ -76,7 +77,8 @@
                         "Cool! Hello , what can I do for you?",
                         "OK! Hola , how can I help you?",
                         "OK! hi , what can I do for you?"
-                  ]
+                  ],
+                  "regex": "name"
             },
             {
                   "tag": "CurrentHumanQuery",
@@ -90,11 +92,11 @@
                         "Tell me my name"
                   ],
                   "responses": [
-                        "You are ! How can I help?",
-                        "Your name is  , how can I help you?",
-                        "They call you , what can I do for you?",
-                        "Your name is , how can I help you?",
-                        ", what can I do for you?"]
+                        "You are {name} ! How can I help?",
+                        "Your name is {name} , how can I help you?",
+                        "They call you {name}, what can I do for you?",
+                        "Your name is {name}, how can I help you?",
+                        ", what can I do for you {name}?"]
             },
             {
                   "tag": "NameQuery",
@@ -124,9 +126,9 @@
                         "Your real name please?"
                   ],
                   "responses": [
-                        "My name is GeniSys",
-                        "GeniSys",
-                        "My real name is GeniSys" 
+                        "My name is FunnyBot",
+                        "FunnyBot",
+                        "My real name is FunnyBot" 
                   ]
                  
             },
