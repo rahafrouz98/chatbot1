@@ -161,11 +161,11 @@
                         "Time"
                   ],
                   "responses1": [
-                        "One moment",
-                        "One sec",
-                        "One second"
-                  ]
-                 
+                        "It is {time} now.",
+                        "{time} already!",
+                        "It is {time}, and it is time to get a watch for yourself! LOL!"
+                  ],
+                  "placeholder": "time"    
             },
             {
                   "tag": "Thanks",
@@ -660,6 +660,27 @@
                   ],
                   "regexName" : "color",
                   "placeholder": "color"
-            }         
+            },
+            {
+                  "tag": "colorQuery",
+                  "patterns":[
+                        "Do you know what is my favourite color?",
+                        "Do you know what is color i like?",
+                        "Can you tell me what is my favourite color?",
+                        "Waht is my favourite color, do you think?"
+                  ],
+                  "responses1":[
+                        "Your favourite color is {color}",
+                        "I am sure it is {color}",
+                        "As long as I remember, It is {color}."
+                  ],
+                  "responses2":[
+                        "You have not told me yet. What is it?",
+                        "I do not know! You tell me!",
+                        "I wish I knew! But if you tell me, I'll rememer it"
+                  ],
+                  "regexName" : "color",
+                  "placeholder": "color"    
+            }
       ]
 }
