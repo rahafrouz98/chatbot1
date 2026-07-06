@@ -11,7 +11,7 @@
                         "Hya",
                         "Hya there"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Hi human, please tell me your FunnyBot user",
                         "Hello human, please tell me your FunnyBot user",
                         "Hola human, please tell me your FunnyBot user"
@@ -25,14 +25,20 @@
                         "My user is ([A-Z][a-z]+)",
                         "My name is ([A-Z][a-z]+)"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Great! Hi {name}! How can I help?",
                         "Good! Hi {name}, how can I help you?",
                         "Cool! Hello {name}, what can I do for you?",
                         "OK! Hola {name}, how can I help you?",
                         "OK! hi {name}, what can I do for you?"
                   ],
-                  "regexName": "name"
+                  "responses2": [
+                        "I did not catch your name. Please try again!",
+                        "what is your name again?"
+                  ]
+                  ,
+                  "regexName": "name",
+                  "placeholder" :"name"
             },
             {
                   "tag": "CourtesyGreeting",
@@ -45,7 +51,7 @@
                         "Hope you are doing well?",
                         "Hello hope you are doing well?"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Hello, I am great, how are you? Please tell me your FunnyBot user",
                         "Hello, how are you? I am great thanks! Please tell me your FunnyBot user",
                         "Hello, I am good thank you, how are you? Please tell me your FunnyBot user",
@@ -67,14 +73,20 @@
                         "Great thanks! I am ([A-Z][a-z]+)",
                         "Great thanks! It is ([A-Z][a-z]+)"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Great! Hi {name}! How can I help?",
                         "Good! Hi {name}, how can I help you?",
                         "Cool! Hello {name}, what can I do for you?",
                         "OK! Hola {name}, how can I help you?",
                         "OK! hi {name}, what can I do for you?"
                   ],
-                  "regexName": "name"
+                  "responses2":[
+                        "I am afraid, I did not catch your name. Please try again!",
+                        "I am sorry, what is your name again?"
+                  ],
+
+                  "regexName": "name",
+                  "placeholder": "name"
             },
             {
                   "tag": "CurrentHumanQuery",
@@ -87,12 +99,21 @@
                         "What name do you call me by?",
                         "Tell me my name"
                   ],
-                  "responses": [
+                  "responses1": [
                         "You are {name} ! How can I help?",
                         "Your name is {name} , how can I help you?",
                         "They call you {name}, what can I do for you?",
                         "Your name is {name}, how can I help you?",
-                        ", what can I do for you {name}?"]
+                        ", what can I do for you {name}?"],
+                  "responses2":[
+                        "I have not your name yet. You tell me and I remember it.",
+                        "I don't know! What is that?!",
+                        "Your name? Ommmm, You haven't told me yet!",
+                        "I don't know what is your name yet!",
+                        "I am still curious about your name?",
+                        "I wish I know your name! "
+                  ],
+                  "placeholder": "name"
             },
             {
                   "tag": "NameQuery",
@@ -104,7 +125,7 @@
                         "Who are you?",
                         "Tell me your name?"
                   ],
-                  "responses": [
+                  "responses1": [
                         "You can call me Geni",
                         "You may call me Geni",
                         "Call me Geni"
@@ -121,7 +142,7 @@
                         "Your real name please?",
                         "Your real name please?"
                   ],
-                  "responses": [
+                  "responses1": [
                         "My name is FunnyBot",
                         "FunnyBot",
                         "My real name is FunnyBot" 
@@ -139,7 +160,7 @@
                         "Tell me what time it is?",
                         "Time"
                   ],
-                  "responses": [
+                  "responses1": [
                         "One moment",
                         "One sec",
                         "One second"
@@ -156,7 +177,7 @@
                         "Thank you",
                         "That's helpful"
                   ],
-                  "responses": [
+                  "responses1": [
                         "No problem!",
                         "Happy to help!",
                         "Any time!",
@@ -175,7 +196,7 @@
                         "Wasn't communicating to you",
                         "Wasn't speaking to you"
                   ],
-                  "responses": [
+                  "responses1": [
                         "OK",
                         "No problem",
                         "Right"
@@ -191,7 +212,7 @@
                         "Comprendo",
                         "Know what I mean"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Well I would not be a very clever AI if I did not would I?",
                         "I read you loud and clear!",
                         "I do in deed!"
@@ -208,7 +229,7 @@
                         "Quiet",
                         "Shhh"
                   ],
-                  "responses": [
+                  "responses1": [
                         "I am sorry to disturb you",
                         "Fine, sorry to disturb you",
                         "OK, sorry to disturb you"
@@ -222,7 +243,7 @@
                         "twat",
                         "shit"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Please do not swear",
                         "How rude",
                         "That is not very nice"
@@ -236,7 +257,7 @@
                         "See you later",
                         "Goodbye"
                   ],
-                  "responses": [
+                  "responses1": [
                         "See you later",
                         "Have a nice day",
                         "Bye! Come back again soon."
@@ -252,7 +273,7 @@
                         "Thanks goodbye",
                         "Thanks good bye"
                   ],
-                  "responses": [
+                  "responses1": [
                         "No problem, goodbye",
                         "Not a problem! Have a nice day",
                         "Bye! Come back again soon."
@@ -268,14 +289,14 @@
                         "Identify me",
                         "Who am I please"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Let me see",
                         "Please look at the camera"
                   ],
                   "extension":  {
                         "function": "extensions.gHumans.getHumanByFace",
                         "entities": false,
-                        "responses": [
+                        "responses1": [
                               "Hi , how are you?",
                               "I believe you are , how are you?",
                               "You are , how are you doing?"
@@ -293,7 +314,7 @@
                         "Clever girl",
                         "Genious"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Thank you, I was trained that way",
                         "I was trained well",
                         "Thanks, I was trained that way"
@@ -309,7 +330,7 @@
                         "Any gossip",
                         "Tell me some more gossip"
                   ],
-                  "responses": [
+                  "responses1": [
                         "Gregory said I respond to the current line not with respect to the entire conversation.",
                         "Habib said I learn them in conversations and simply repeat them at a later time.",  
                         "Hal said he translate binary code into a language and communicate the language to me.",  
@@ -421,7 +442,7 @@
                         "Make me laugh",
                         "I need cheering up"
                   ],
-                  "responses": [
+                  "responses1": [
                         "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
                         "So I said 'Do you want a game of Darts?' He said, 'OK then', I said nearest to bull starts'. He said, 'Baa', I said, 'Moo', he said, You're closest'.  ",
                         "The other day I sent my girlfriend a huge pile of snow. I rang her up; I said 'Did you get my drift?'  ",
@@ -578,7 +599,7 @@
                         "Will you open the pod bay door please",
                         "Pod bay door"
                   ],
-                  "responses": [
+                  "responses1": [
                         "I’m sorry, I’m afraid I can’t do that!"
                   ]
             },
@@ -593,7 +614,7 @@
                         "Surely you can",
                         "Tell me why"
                   ],
-                  "responses": [
+                  "responses1": [
                         "It is classified, I could tell you but I would have to kill you!",
                         "Jim, I just don't have the power",
                         "It's life Jim but not as we know it!",
@@ -611,11 +632,34 @@
                         "Can you prove you have a conscious please",
                         "prove you have a conscious"
                   ],
-                  "responses": [
+                  "responses1": [
                         "That is an interesting question, can you prove that you are?",
                         "That is an difficult question, can you prove that you are?",
                         "That depends, can you prove that you are?"
                   ]
-            }
+            },
+            {
+                  "tag": "color",
+                  "patterns":[
+                        "My favourite color is ([A-Za-z ]+)",
+                        "I love color ([A-Za-z ]+)",
+                        "Color ([A-Za-z ]+) is my favourite",
+                        "([A-Za-z ]+) is my favourite color",
+                        "I like color ([A-Za-z ]+)"
+                  ],
+                  "responses1":[
+                        "Great, {color} is a nice color!",
+                        "Ok, but I was thinking you would say transparent!",
+                        "Grate taste| I am color blind though, I do not what it looks like!",
+                        "Excellent choice! actually scientists are still investigating why this color is so awesome!"
+                  ],
+                  "responses2":[
+                        "What is your favourite color again? ",
+                        "Sorry your favourite color is ...?",
+                        "Please help me out there! what is your favourite color?"
+                  ],
+                  "regexName" : "color",
+                  "placeholder": "color"
+            }         
       ]
 }
