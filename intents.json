@@ -71,7 +71,9 @@
                         "(?i:Great thanks My user is )([A-Z][a-z]+)",
                         "(?i:Great thanks This is )([A-Z][a-z]+)",
                         "(?i:Great thanks I am )([A-Z][a-z]+)",
-                        "(?i:Great thanks It is )([A-Z][a-z]+)"
+                        "(?i:Great thanks It is )([A-Z][a-z]+)",
+                        "(?i:Great thanks my name is )([A-Z][a-z]+)",
+                        "(?i:Good thanks my name is )([A-Z][a-z]+)"
                   ],
                   "responses1": [
                         "Great! Hi {name}! How can I help?",
@@ -97,7 +99,9 @@
                         "What do you think I am?",
                         "Who are you talking to?",
                         "What name do you call me by?",
-                        "Tell me my name"
+                        "Tell me what is my name",
+                        "Do you know what is my name?"
+
                   ],
                   "responses1": [
                         "You are {name} ! How can I help?",
@@ -627,17 +631,17 @@
             {
                   "tag": "color",
                   "patterns":[
-                        "(?i)My favourite color is ([A-Za-z ]+)",
-                        "I love color ([A-Za-z ]+)",
-                        "Color ([A-Za-z ]+) is my favourite",
-                        "([A-Za-z ]+) is my favourite color",
-                        "I like color ([A-Za-z ]+)"
+                        "My favourite color is ([A-Za-z]+(?:\\s+[A-Za-z]+){0,2})",
+                        "I love color ([A-Za-z]+(?:\\s+[A-Za-z]+){0,2})",
+                        "Color ([A-Za-z]+(?:\\s+[A-Za-z]+){0,2}) is my favourite",
+                        "([A-Za-z]+(?:\\s+[A-Za-z]+){0,2}) is my favourite color",
+                        "I like color ([A-Za-z]+(?:\\s+[A-Za-z]+){0,2})"
                   ],
                   "responses1":[
                         "Great, {color} is a nice color!",
-                        "Ok, but I was thinking you would say transparent!",
-                        "Grate taste| I am color blind though. I do not know what it looks like!",
-                        "Excellent choice! actually scientists are still investigating why this color is so awesome!"
+                        "{color} is nice! But I was thinking you would say transparent!",
+                        "Grate taste| I am color blind though. I do not know what {color} looks like!",
+                        "Excellent choice! actually scientists are still investigating why this {color} is so awesome!"
                   ],
                   "responses2":[
                         "What is your favourite color again? ",
@@ -653,7 +657,7 @@
                         "Do you know what is my favourite color?",
                         "Do you know what is color i like?",
                         "Can you tell me what is my favourite color?",
-                        "Waht is my favourite color, do you think?"
+                        "What is my favourite color, do you think?"
                   ],
                   "responses1":[
                         "Your favourite color is {color}",
@@ -665,7 +669,6 @@
                         "I do not know! You tell me!",
                         "I wish I knew! But if you tell me, I'll rememer it"
                   ],
-                  "regexName" : "color",
                   "placeholder": "color"    
             }
       ]
